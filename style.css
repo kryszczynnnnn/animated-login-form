@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Varela Round', sans-serif;
+}
+
+body {
+    background-color: #4ca75b;
+    background: linear-gradient(to right, #f8d594, #4ca75b);
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: auto;
+    border-radius: 30px;
+    box-shadow: 0px 0px 100px rgba(255, 255, 255, 1);
+    background-color: transparent;
+    border: 2px solid #fff;
+    overflow: hidden;
+}
+
+.container h1 {
+    margin: 5px 0px;
+    text-align: center;
+    color: #fff;
+}
+
+.sign-in {
+    display: block;
+}
+
+.container.active .sign-in {
+    display: none;
+}
+
+.sign-up {
+    display: none;
+}
+
+.container.active .sign-up {
+    display: block;
+}
+
+.container input {
+    position: relative;
+    width: 350px;
+    border: none;
+    border-bottom: 2px solid white;
+    background-color: transparent;
+    outline: none;
+    height: 40px;
+    padding: 0px 4px;
+    margin: 12px 0px;
+    font-size: 15px;
+    color: #ffffff;
+    font-weight: 300;
+}
+
+.container label {
+    position: absolute;
+    top: 25px;
+    left: 5px;
+    color: #fff;
+    transition: 0.2s;
+    pointer-events: none;
+}
+
+.container input:focus ~ label,
+.container input:valid ~ label {
+    top: -1px;
+    font-size: 15px;
+}
+
+.form-container form {
+    margin: 10px 0px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.form-container form button {
+    border: 1px solid #fff;
+    padding: 10px 90px;
+    border-radius: 30px;
+    background-color: transparent;
+    color: #fff;
+    font-size: 18px;
+    transition: 0.5s;
+}
+
+.form-container form button:hover {
+    background-color: #fff;
+    color: #000;
+    box-shadow: 0px 0px 10px #fff;
+}
+
+.input-box {
+    position: relative
+}
+
+.toggle{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    color: #fff;
+    line-height: 1.5;
+}
+
+.toggle a{
+    color: #fff;
+    text-decoration: underline;
+}
+
+.toggle a:hover {
+    text-decoration: underline;
+}
+
+.use-email {
+    font-size: 15px;
+    color: #ffffff;
+}
+
+.social-icons {
+    margin: 15px 30px;
+}
+
+.social-icons a {
+    color: #ffffff;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    transition: 0.3s;
+    text-decoration: none;
+    font-size: 25px;
+    padding: 5px 7px;
+}
+
+.social-icons a:hover{
+    background-color: #fff;
+    color: #000;
+}

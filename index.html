@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css" integrity="sha512-OQDNdI5rpnZ0BRhhJc+btbbtnxaj+LdQFeh0V9/igiEPDiWE2fG+ZsXl0JEH+bjXKPJ3zcXqNyP4/F/NegVdZg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Log In</title>
+</head>
+<body>
+    <div class="container" id="container">
+        <div class="form-container sign-in">
+            <form>
+                <h1>Sign In</h1>
+                <div class="social-icons">
+                    <a href="#"><i class="ri-google-fill"></i></i></a>
+                    <a href="#"><i class="ri-facebook-fill"></i></a>
+                    <a href="#"><i class="ri-apple-fill"></i></a>
+                </div>
+                <span class="use-email">or use your email</span>
+                <div class="input-box">
+                    <input type="text" required><label>Email</label>
+                </div>
+                <div class="input-box">
+                    <input type="password" required><label>Passowrd</label>
+                </div>
+                <button>Sign In</button>
+            </form>
+            <div class="toggle">
+                Doesn't have account? <a href="#" id="sign-up">Sign Up</a>
+            </div>
+        </div>
+        <div class="form-container sign-up">
+            <form>
+                <h1>Sign Up</h1>
+                <div class="social-icons">
+                    <a href="#"><i class="ri-google-fill"></i></i></a>
+                    <a href="#"><i class="ri-facebook-fill"></i></a>
+                    <a href="#"><i class="ri-apple-fill"></i></a>
+                </div>
+                <span class="use-email">or use your email</span>
+                <div class="input-box">
+                    <input type="text" required><label>Username</label>
+                </div>
+                <div class="input-box">
+                    <input type="text" required><label>Email</label>
+                </div>
+                <div class="input-box">
+                    <input type="password" required><label>Passowrd</label>
+                </div>
+                <button>Sign Up</button>
+            </form>
+            <div class="toggle">
+                Already have account?<a href="#" id="sign-in">Sign In</a>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
